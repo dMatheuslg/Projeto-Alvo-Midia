@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181818;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.nav-logo img {
+    max-width: 100px;
+}
+
+.nav-logo > .nome-empresa {
+    font-family: 'EB Garamond', sans-serif;
+    margin-top: -5rem;
+    margin-left: 6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7851A9;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.link a {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.link a:hover {
+    color: #7851A9;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #7851A9;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.cadastro_btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #7851A9;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.cadastro_btn:hover {
+    background-color: #684198;
+    transform: scale(1.05);
+}
+
+.explorar_btn {
+    margin-top: 30rem;
+    margin-left: -37.5rem;
+    margin-right: 40rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #7851A9;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explorar_btn:hover {
+    background-color: #684198;
+    transform: scale(1.05);
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+}
+
+header .content h1 span {
+    color: #7851A9;
+}
+
+header .content p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+header .image img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.alvo {
+    display: block;
+    margin-left: 40rem;
+    margin-top: -40rem;
+    min-width: 40rem;
+    min-height: 40rem;
+}
+
+.header {
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sub-header {
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.pricing .card {
+    background-color: #27272a;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pricing .card:hover {
+    background-color: #323232;
+    transform: scale(1.05);
+}
+
+.pricing .card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.pricing .card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.pricing .card button {
+    background-color: #7851A9;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing .card button:hover {
+    background-color: #684198;
+}
+
+footer {
+    background-color: #202020;
+    padding: 4rem 1rem;
+    color: #ccc;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: left;
+}
+
+footer .logo img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 2rem;
+}
+
+.socials {
+    margin-bottom: 2rem;
+}
+
+.socials a {
+    margin-right: 1rem;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #7851A9;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.column a {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.column a:hover {
+    color: #7851A9;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #27272a;
+    border-radius: 10px;
+
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 0;
+}
+
+.form-cadastro label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-cadastro label1 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #7851A9;
+}
+
+.form-cadastro input {
+    padding: 0.75rem 1rem;
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #7851A9;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-cadastro input:focus {
+    border-color: #684198;
+}
+
+.form-cadastro button {
+    background-color: #7851A9;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-cadastro button:hover {
+    background-color: #684198;
+    transform: scale(1.05);
+}
+
+.form-cadastro select {
+    padding: 0.75rem 1rem;
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #7851A9;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    appearance: none;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 24 24%22 fill%3D%22none%22 stroke%3D%22%237851A9%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22 class%3D%22feather feather-chevron-down%22%3E%3Cpolyline points%3D%226 9 12 15 18 9%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px;
+}
+
+.form-cadastro select:focus {
+    border-color: #684198;
+    background-color: #202020;
+}
+
+.form-cadastro select option {
+    background-color: #27272a;
+    color: #fff;
+}
+
+.msg-erro{
+    font-size: 14px;
+    text-align: left;
+    margin: 10px 0;
+    color: #d81212;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+.section-table{
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #27272a;
+    border-radius: 10px;
+}
+
+.user-greeting h4 {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    color: white; /* Cor para o texto, ajuste conforme necessário */
+    margin: 0; /* Remove qualquer margem desnecessária */
+    padding: 5px 0; /* Ajuste o padding se necessário */
+    margin-top: 1rem;
+}
